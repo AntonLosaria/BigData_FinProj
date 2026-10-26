@@ -1,0 +1,24 @@
+# Required packages for the Kafka producer, Spark job and Streamlit dashboard
+streamlit>=1.28.0
+streamlit-autorefresh
+pandas>=2.0.0
+numpy>=1.24.0
+plotly>=5.15.0
+kafka-python>=2.0.2,<3   # Kafka producer + live consumer
+python-dateutil>=2.8.2
+requests>=2.31.0         # WeatherAPI calls
+python-dotenv>=1.0.0     # reads .env
+pymongo>=4.5.0           # MongoDB storage
+pyspark==3.5.1           # Spark Structured Streaming (needs Java 8/11/17)
+
+# Export features (xlsx / jpg / png / pdf)
+openpyxl>=3.1.0
+matplotlib>=3.7.0
+pillow>=10.0.0
+reportlab>=4.0.0
+
+# Development & Testing
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
